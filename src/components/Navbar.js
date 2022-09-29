@@ -1,19 +1,14 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import SideNav, { MenuIcon } from "react-simple-sidenav";
 
 const Navbar = (props) => {
   const [showNav, setShowNav] = useState();
 
   const navItems = [
-    <a target="_blank" href="someLink">
-      Link1
-    </a>,
-    <a target="_blank" href="someLink">
-      Link2
-    </a>,
-    <a target="_blank" href="someLink">
-      Link3
-    </a>,
+    <Link to="/">Home</Link>,
+    <Link to="/history">History</Link>,
+    <Link to="/profile">Profile</Link>,
   ];
 
   const title = <h1>Hello octo </h1>;
