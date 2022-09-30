@@ -16,7 +16,7 @@ const Navbar = (props) => {
   const title = (
     <div className="flex items-center">
       <img src={Asbeza} alt="asbeza" className="w-[30%]" />
-      <h1 className="text-4xl font-bold">Asbeza</h1>
+      <h1 className="sm:text-4xl font-bold">Asbeza</h1>
     </div>
   );
 
