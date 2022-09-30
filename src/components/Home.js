@@ -24,8 +24,8 @@ const Home = () => {
         </Container>
       ) : (
         <Container>
-          {products.map((product) => (
-            <div key={product?._id}>
+          {products.map((product, index) => (
+            <div key={index}>
               <Product product={product} />
             </div>
           ))}
