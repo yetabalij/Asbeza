@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 import Navbar from "./Navbar";
 import Container from "./Container";
+import Product from "./Product";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -25,7 +26,7 @@ const Home = () => {
         <Container>
           {products.map((product) => (
             <div key={product?._id}>
-              <h1>{product?.name}</h1>
+              <Product product={product} />
             </div>
           ))}
         </Container>
