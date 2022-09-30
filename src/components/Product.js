@@ -1,10 +1,15 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 import Rating from "react-rating";
+import { addHistory } from "./../features/historySlice";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 
 const Product = (props) => {
-  const [quantity, setQuantity] = useState(0);
+  const [quantity, setQuantity] = useState(1);
+  const [alert, setAlert] = useState(false);
+  const [message, setMessage] = useState("");
   const totalPrice = quantity * props.product.price;
+  const dispatch = useDispatch();
 
   const ItemToHistory = {
     ...props.product,
@@ -13,7 +18,9 @@ const Product = (props) => {
   };
 
   const handleAddToHistory = () => {
-    console.log(ItemToHistory);
+    dispatch(addHistory(ItemToHistory));
+    setAlert(true);
+    setMessage("Item Added to History.");
   };
 
   return (
@@ -33,7 +40,6 @@ const Product = (props) => {
             readonly
           />
         </div>
-        <p className="font-medium mb-2">{`Price: $${props.product.price}`}</p>
         <div className="flex gap-1">
           <select
             onChange={(e) => {
@@ -44,8 +50,8 @@ const Product = (props) => {
               .fill()
               .map((_, i) => {
                 return (
-                  <option value={i} key={i}>
-                    {i}
+                  <option value={i + 1} key={i}>
+                    {i + 1}
                   </option>
                 );
               })}
@@ -60,6 +66,11 @@ const Product = (props) => {
             <p className="font-medium">{`Total: $${totalPrice}`}</p>
           </div>
         </div>
+        {alert && (
+          <p className="bg-[#046d4c] mt-2 text-white w-[80%] mx-auto text-center">
+            {message}
+          </p>
+        )}
       </div>
     </div>
   );
