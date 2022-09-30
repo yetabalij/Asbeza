@@ -10,7 +10,7 @@ export const productSlice = createSlice({
   initialState,
   reducers: {
     getData: (state) => {
-      return { products: [...state, data] };
+      return { ...state.products, data };
     },
   },
 });
