@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { getData } from "../features/productSlice";
+import { useDispatch } from "react-redux";
+
 import Navbar from "./Navbar";
 import Container from "./Container";
 
 const Home = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getData());
+  }, []);
   return (
     <div>
       <Navbar />
