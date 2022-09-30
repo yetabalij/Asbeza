@@ -1,33 +1,18 @@
-import { useState } from "react";
-import SideNav, { MenuIcon } from "react-simple-sidenav";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import History from "./components/History";
+import Profile from "./components/Profile";
 
-function App(props) {
-  const [showNav, setShowNav] = useState();
-  const navItems = [
-    <a target="_blank" href="someLink">
-      Link1
-    </a>,
-    <a target="_blank" href="someLink">
-      Link2
-    </a>,
-    <a target="_blank" href="someLink">
-      Link3
-    </a>,
-  ];
-
-  const title = <h1>Hello octo </h1>;
+function App() {
   return (
     <div className="App">
-      <div className="bg-red-500 min-h-[5vh] flex items-center">
-        <MenuIcon onClick={() => setShowNav(true)} className="bg-red-500" />
-        <SideNav
-          showNav={showNav}
-          onHideNav={() => setShowNav(false)}
-          title={title}
-          items={navItems}
-        />
-      </div>
-      <h1 className="text-3xl font-bold underline">Hello Asbeza.</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/history" element={<History />} />
+          <Route path="/profile" element={<Profile />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
