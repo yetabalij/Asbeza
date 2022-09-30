@@ -1,11 +1,12 @@
 import React from "react";
 import Navbar from "./Navbar";
+import Container from "./Container";
 
 const Home = () => {
   return (
     <div>
       <Navbar />
-      Home
+      <Container>Home</Container>
     </div>
   );
 };
