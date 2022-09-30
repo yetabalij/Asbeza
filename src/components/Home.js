@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Navbar from "./Navbar";
 import Container from "./Container";
 import Product from "./Product";
+import Footer from "./Footer";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -31,6 +32,7 @@ const Home = () => {
           ))}
         </Container>
       )}
+      <Footer />
     </div>
   );
 };
