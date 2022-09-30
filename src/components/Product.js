@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import Rating from "react-rating";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 
 const Product = (props) => {
+  const [quantity, setQuantity] = useState(0);
+  const totalPrice = quantity * props.product.price;
+
+  const ItemToHistory = {
+    ...props.product,
+    totalQuantity: quantity,
+    totalPrice: totalPrice,
+  };
+
+  const handleAddToHistory = () => {
+    console.log(ItemToHistory);
+  };
+
   return (
     <div key={props.key} className="shadow-md">
       <img src={props.product.image} />
@@ -20,16 +33,32 @@ const Product = (props) => {
             readonly
           />
         </div>
-        <div className="flex gap-3">
-          <select>
-            <option>0</option>
-            <option>1</option>
-            <option>2</option>
+        <p className="font-medium mb-2">{`Price: $${props.product.price}`}</p>
+        <div className="flex gap-1">
+          <select
+            onChange={(e) => {
+              setQuantity(e.target.value);
+            }}
+          >
+            {Array(props.product?.quantity)
+              .fill()
+              .map((_, i) => {
+                return (
+                  <option value={i} key={i}>
+                    {i}
+                  </option>
+                );
+              })}
           </select>
-          <button className="bg-[#046d4c] text-white px-2 py-1">
+          <button
+            className="bg-[#9fcf37] text-white px-2 py-1"
+            onClick={handleAddToHistory}
+          >
             Add To History
           </button>
-          <p>Price:</p>
+          <div>
+            <p className="font-medium">{`Total: $${totalPrice}`}</p>
+          </div>
         </div>
       </div>
     </div>
