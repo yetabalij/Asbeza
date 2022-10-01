@@ -1,50 +1,65 @@
 [
   {
-    "name": "traditional one",
-    "description": "Velit irure cillum voluptate do irure eiusmod elit deserunt exercitation ea ad ex. Amet sit voluptate est magna non Lorem ipsum eiusmod sit reprehenderit. Est amet voluptate duis enim ex cillum ipsum ea excepteur pariatur. Non tempor commodo occaecat aliqua enim dolor aliqua. Dolor id incididunt sit eiusmod consequat qui labore qui non ipsum mollit et deserunt.",
+    "name": "Carrot",
     "price": 100,
     "quantity": 7,
     "ratting": 4,
-    "image": "https://res.cloudinary.com/dpy3euo56/image/upload/v1654171008/cld-sample-5.jpg"
+    "image": "./imges/carrot.jpg"
   },
   {
-    "name": "traditional two",
-    "description": " Voluptate commodo eiusmod fugiat est consequat labore. Ex ut labore nulla quis velit et incididunt magna eiusmod eu nulla. Eu quis dolor esse sint mollit officia reprehenderit nisi ad consectetur fugiat. Id ullamco id magna aliqua. Amet proident officia incididunt consequat esse dolor dolore magna sint ipsum duis laboris ex commodo.",
+    "name": "Cucumber",
     "price": 220,
     "quantity": 6,
     "ratting": 5,
-    "image": "https://res.cloudinary.com/dpy3euo56/image/upload/v1654171008/cld-sample-4.jpg"
+    "image": "./imges/cucumber.jpg"
   },
   {
-    "name": "traditional three",
-    "description": " Aliqua qui dolore sit sunt id labore sunt. Quis proident dolor pariatur tempor elit magna nostrud deserunt. Nisi consectetur adipisicing nisi occaecat anim et magna adipisicing fugiat mollit proident. Mollit minim ullamco Lorem eiusmod nisi nostrud amet ad est ea cillum. Occaecat elit est ut exercitation.",
+    "name": "Garlic",
     "price": 1200,
     "quantity": 10,
     "ratting": 3,
-    "image": "https://res.cloudinary.com/dpy3euo56/image/upload/v1654171008/cld-sample-3.jpg"
+    "image": "./imges/garlic.jpg"
   },
   {
-    "name": "traditional foure",
-    "description": " Aliqua fugiat velit deserunt elit magna excepteur cillum deserunt cillum aute commodo incididunt. Eu culpa elit anim ipsum exercitation cupidatat labore aliquip consequat quis. Duis aliqua voluptate nulla officia officia incididunt nostrud irure minim veniam elit.",
+    "name": "Macaroni",
     "price": 500,
     "quantity": 4,
     "ratting": 2,
-    "image": "https://res.cloudinary.com/dpy3euo56/image/upload/v1654171007/cld-sample-2.jpg"
+    "image": "./imges/macaroni.jpg"
   },
   {
-    "name": "traditional five",
-    "description": " Duis dolore consequat adipisicing voluptate pariatur veniam ex irure voluptate nulla. Sint do dolor non nulla adipisicing et consequat ea minim Lorem sit. Aliquip commodo voluptate mollit officia quis esse aliquip id reprehenderit culpa officia amet adipisicing in. Irure ut officia cillum laboris laboris ullamco. Nostrud magna dolore aliquip proident eu et nostrud Lorem commodo ad sint anim cupidatat occaecat. Aute minim ea id laboris do cillum. Fugiat consectetur eu deserunt incididunt excepteur veniam cillum.",
+    "name": "Onion",
     "price": 1800,
     "quantity": 3,
     "ratting": 5,
-    "image": "https://res.cloudinary.com/dpy3euo56/image/upload/v1654171007/cld-sample.jpg"
+    "image": "./imges/onions.jpg"
   },
   {
-    "name": "traditional six",
-    "description": " Fugiat non sint dolor do sit id ipsum anim irure mollit labore exercitation. Laboris aliquip nisi elit nostrud. Aliqua quis sunt velit anim.",
+    "name": "Pepper",
     "price": 140,
     "quantity": 8,
     "ratting": 5,
-    "image": "https://res.cloudinary.com/dpy3euo56/image/upload/v1654170985/sample.jpg"
+    "image": "./imges/pepper.jpg"
+  },
+  {
+    "name": "Potato",
+    "price": 140,
+    "quantity": 8,
+    "ratting": 5,
+    "image": "./imges/potatoe.jpg"
+  },
+  {
+    "name": "Pumpkin",
+    "price": 140,
+    "quantity": 8,
+    "ratting": 5,
+    "image": "./imges/pumpkin.jpg"
+  },
+  {
+    "name": "Tomato",
+    "price": 140,
+    "quantity": 8,
+    "ratting": 5,
+    "image": "./imges/tomatoe.jpg"
   }
 ]
