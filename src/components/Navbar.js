@@ -11,6 +11,7 @@ const Navbar = (props) => {
     <Link to="/">Home</Link>,
     <Link to="/history">History</Link>,
     <Link to="/profile">Profile</Link>,
+    <Link to="/map">Map</Link>,
   ];
 
   const title = (
