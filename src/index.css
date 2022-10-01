@@ -10,3 +10,8 @@
   list-style: none;
   text-decoration: none;
 }
+.map {
+  width: 100wh;
+  height: 93vh;
+  z-index: -10;
+}
