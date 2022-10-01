@@ -25,7 +25,7 @@ const History = () => {
                 <p className="font-medium">{`Single Price: $${item?.price}`}</p>
                 <p className="font-medium">{`Total Price: $${item?.totalPrice}`}</p>
               </div>
-              <div className="flex flex-col items-start">
+              <div className="flex flex-col items-start sm:mr-10">
                 <button className="bg-[#9fcf37] text-white px-2 py-2 mb-2 sm:w-[200px] w-full rounded-sm">
                   Delete
                 </button>
