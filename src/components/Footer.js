@@ -1,10 +1,19 @@
 import React from "react";
 import Logo from "./../assets/Asbeza.png";
 import { BsFacebook } from "react-icons/bs";
-import { RiInstagramFill } from "react-icons/ri";
-import { AiFillYoutube } from "react-icons/ai";
+import { BsPinterest } from "react-icons/bs";
+import { BsTelegram } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
 import { AiFillLinkedin } from "react-icons/ai";
+
+//share import
+import {
+  FacebookShareButton,
+  PinterestShareButton,
+  TelegramShareButton,
+  TwitterShareButton,
+  LinkedinShareButton,
+} from "react-share";
 
 const Footer = () => {
   const date = new Date();
@@ -44,14 +53,36 @@ const Footer = () => {
         </div>
         <div className="sm:flex flex-col items-center">
           <div className="mb-2">
-            <p className="text-xl font-medium text-[#9fcf37]">Social Medias</p>
+            <p className="text-xl font-medium text-[#9fcf37]">Social Shares</p>
           </div>
           <div className="flex gap-2 text-[1.3rem]">
-            <BsFacebook />
-            <RiInstagramFill />
-            <AiFillYoutube />
-            <BsTwitter />
-            <AiFillLinkedin />
+            <FacebookShareButton url={"http://ermiastsegu.netlify.app/"}>
+              <BsFacebook />
+            </FacebookShareButton>
+            <PinterestShareButton
+              media={"./carrot.jpg"}
+              url={"http://ermiastsegu.netlify.app/"}
+            >
+              <BsPinterest />
+            </PinterestShareButton>
+            <TelegramShareButton
+              title={"Asbeza"}
+              url={"http://ermiastsegu.netlify.app/"}
+            >
+              <BsTelegram />
+            </TelegramShareButton>
+            <TwitterShareButton
+              title={"Asbeza"}
+              url={"http://ermiastsegu.netlify.app/"}
+            >
+              <BsTwitter />
+            </TwitterShareButton>
+            <LinkedinShareButton
+              title={"Asbeza"}
+              url={"http://ermiastsegu.netlify.app/"}
+            >
+              <AiFillLinkedin />
+            </LinkedinShareButton>
           </div>
         </div>
       </div>
