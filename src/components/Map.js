@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import Navbar from "./Navbar";
 
 const Map = () => {
   return (
-    <div>Map</div>
-  )
-}
+    <div>
+      <Navbar />
+      Map
+    </div>
+  );
+};
 
-export default Map
+export default Map;
