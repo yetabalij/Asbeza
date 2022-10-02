@@ -5,12 +5,14 @@ import Navbar from "./Navbar";
 
 const History = () => {
   const history = useSelector((state) => state.history.historyItems);
-  console.log(history);
   return (
     <div>
       <Navbar />
       <div className="w-[80%] lg:w-[60%] mx-auto flex flex-col mt-4">
         <h1 className="font-medium text-2xl mb-4">History</h1>
+        {history.length === 0 && (
+          <p className="bg-gray-100 shadow-md p-5">No Content to show.</p>
+        )}
         {history.map((item, index) => {
           return (
             <div
