@@ -56,30 +56,30 @@ const Footer = () => {
             <p className="text-xl font-medium text-[#9fcf37]">Social Shares</p>
           </div>
           <div className="flex gap-2 text-[1.3rem]">
-            <FacebookShareButton url={"http://ermiastsegu.netlify.app/"}>
+            <FacebookShareButton url={"https://asbeza.netlify.app/"}>
               <BsFacebook />
             </FacebookShareButton>
             <PinterestShareButton
               media={"./carrot.jpg"}
-              url={"http://ermiastsegu.netlify.app/"}
+              url={"https://asbeza.netlify.app/"}
             >
               <BsPinterest />
             </PinterestShareButton>
             <TelegramShareButton
               title={"Asbeza"}
-              url={"http://ermiastsegu.netlify.app/"}
+              url={"https://asbeza.netlify.app/"}
             >
               <BsTelegram />
             </TelegramShareButton>
             <TwitterShareButton
               title={"Asbeza"}
-              url={"http://ermiastsegu.netlify.app/"}
+              url={"https://asbeza.netlify.app/"}
             >
               <BsTwitter />
             </TwitterShareButton>
             <LinkedinShareButton
               title={"Asbeza"}
-              url={"http://ermiastsegu.netlify.app/"}
+              url={"https://asbeza.netlify.app/"}
             >
               <AiFillLinkedin />
             </LinkedinShareButton>
